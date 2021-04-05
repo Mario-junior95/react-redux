@@ -9,11 +9,13 @@ import CocktailContainer from "./Components/CocktailContainer";
 import HooksCocktailContainer from "./Components/HooksCocktailContainer";
 import NewCakeContainer from "./Components/NewCakeContainer";
 import ItemContainer from "./Components/ItemContainer";
+import UserContainer from "./Components/UserContainer";
 
 const App = () => {
   return (
     <Provider store={store}>
       <div className="App">
+        <UserContainer/>
         <ItemContainer cake />
         <ItemContainer />
         <CakeContainer />
@@ -22,6 +24,7 @@ const App = () => {
         <CocktailContainer />
         <HooksCocktailContainer />
         <NewCakeContainer />
+        
       </div>
     </Provider>
   );
